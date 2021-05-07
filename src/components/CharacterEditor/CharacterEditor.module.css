@@ -3,7 +3,8 @@
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {
+.characterEditor .maxWidthWrapper {
+  isolation: isolate;
 }
 
 .header {
@@ -27,15 +28,14 @@
 .characterWrapper {
   position: fixed;
   min-height: 500px;
-  right: 0;
-  top: 64px;
-  width: 35%;
-  pointer-events: none;
+  left: 55%;
+  margin-left: 32px;
+  top: 15%;
+  bottom: 5%;
 }
 
 .controlColumn {
   width: 50%;
-  isolation: isolate;
 }
 
 .perspectiveBarWrapper {
@@ -47,6 +47,7 @@
   bottom: 0;
   width: 100%;
   height: 300px;
+  max-height: 40%;
   background-color: hsl(195deg, 20%, 86%);
 }
 
